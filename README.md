@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://saitejakalepu-portfolio.web.app/" target="_blank">saitejakalepu-portfolio.web.app/</a>
+  <a href="https://saitejakalepu-portfolio.web.app/" target="_blank">saitejakalepu-portfolio.web.app</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
