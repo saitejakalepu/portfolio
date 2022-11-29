@@ -17,6 +17,8 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
+              <br />I design and <b className="purple">code</b> beautifully simple things, and i <b className="purple">love </b>what I do
+              <br />
               <br />I am <b className="purple">collaborative</b> and <b className="purple">result-oriented </b>person
               <br />
               <br />I am fluent in classics like

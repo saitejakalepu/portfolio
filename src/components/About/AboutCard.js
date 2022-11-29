@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import firebaseData from "../../firebase";
+import { useSelector} from 'react-redux';
 
 function AboutCard() {
-  const [about, setAbout] = useState([]);
-  useEffect(()=>{
-    firebaseData.database().ref("about").on("value",snapshot=>{
-   setAbout(snapshot.val());
-    });
-   },[])
-
-console.log(about);
+  const about = useSelector(state => state.data.about);
   return (
     <Card className="quote-card-view">
       <Card.Body>

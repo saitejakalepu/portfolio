@@ -17,15 +17,23 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contactform from "./components/Home/Contactform";
+import {useDispatch} from 'react-redux';
+import {setData} from './stores/action';
+import firebaseData from "./firebase";
+import { data } from "./data";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const dispatch = useDispatch();
 
   useEffect(() => {
+    //call firebase Database here & setting global state with the fetched data
+    firebaseData.database().ref().on("value",snapshot=>{
+      dispatch(setData(snapshot.val() ? snapshot.val() : data));
+       });
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
-
     return () => clearTimeout(timer);
   }, []);
 
