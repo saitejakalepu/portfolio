@@ -25,7 +25,7 @@ function Footer() {
               <a
                 href="https://github.com/saitejakalepu"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +35,7 @@ function Footer() {
               <a
                 href="https://twitter.com/ursssbabu"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
@@ -43,9 +43,9 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://github.com/saitejakalepu"
+                href="https://www.linkedin.com/feed/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -55,7 +55,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/sai_teja_babu/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
