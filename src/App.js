@@ -10,15 +10,15 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contactform from "./components/Home/Contactform";
-import {useDispatch} from 'react-redux';
-import {setData} from './stores/action';
+import { useDispatch } from "react-redux";
+import { setData } from "./stores/action";
 import firebaseData from "./firebase";
 import { data } from "./data";
 
@@ -28,9 +28,12 @@ function App() {
 
   useEffect(() => {
     //call firebase Database here & setting global state with the fetched data
-    firebaseData.database().ref().on("value",snapshot=>{
-      dispatch(setData(snapshot.val() ? snapshot.val() : data));
-       });
+    firebaseData
+      .database()
+      .ref()
+      .on("value", (snapshot) => {
+        dispatch(setData(snapshot.val() ? snapshot.val() : data));
+      });
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
@@ -49,7 +52,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contactform />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
