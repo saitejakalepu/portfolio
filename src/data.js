@@ -1,8 +1,8 @@
 export const data ={
     "about": {
       "Skill": "React",
-      "company": "Cognizant",
-      "experience": "3.6*",
+      "company": "DBS Tech India",
+      "experience": "5.5",
       "position": "Software Engineer",
       "role": "React Developer"
     },
